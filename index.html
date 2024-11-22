@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranjal Ojha: Digital Design Expertise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+            overflow-x: hidden;
+        }
+
+        .nav-link:hover {
+            color: #dc2626 !important;
+            text-decoration: underline;
+        }
+
+        .hero-section {
+            height: 100vh;
+            background: linear-gradient(to right, #1d4ed8, #3b82f6);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .projects-section {
+            background: #ffffff;
+            padding: 60px 0;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .animated-button {
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .animated-button:hover {
+            transform: scale(1.1);
+            background-color: #dc2626;
+            color: white !important;
+        }
+
+        .animated-button:active {
+            transform: scale(0.95);
+        }
+
+        footer {
+            background: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #dc2626;
+        }
+
+        /* Typewriter Effect */
+        .typewriter {
+            display: inline-block;
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 2rem;
+            white-space: nowrap;
+            border-right: 0.1em solid rgba(255, 255, 255, 0.75);
+            animation: typing 4s steps(40) 1s 1 normal both, blink 0.75s step-end infinite;
+        }
+        .name-container {
+            font-size: 3rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .letter {
+            opacity: 0;
+            display: inline-block;
+            transform: translateY(10px);
+            animation: typeAnimation 0.5s forwards;
+        }
+
+        @keyframes typeAnimation {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* This is to add delay to each letter */
+        .letter:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .letter:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+        .letter:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+        .letter:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+        .letter:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+        .letter:nth-child(6) {
+            animation-delay: 0.5s;
+        }
+        .letter:nth-child(7) {
+            animation-delay: 0.6s;
+        }
+        .letter:nth-child(8) {
+            animation-delay: 0.7s;
+        }
+        .letter:nth-child(9) {
+            animation-delay: 0.8s;
+        }
+        .letter:nth-child(10) {
+            animation-delay: 0.9s;
+        }
+        .letter:nth-child(11) {
+            animation-delay: 1s;
+        }
+        .letter:nth-child(12) {
+            animation-delay: 1.1s;
+        }
+        .letter:nth-child(13) {
+            animation-delay: 1.2s;
+        }
+        .space {
+            display: inline-block;
+            width: 1rem; /* Adjust the width of the space to control the gap */
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+        .words-container {
+            display: inline-block;
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 2rem;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .word {
+            display: none;
+            animation: wordAppear 2s forwards;
+        }
+
+        @keyframes wordAppear {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-danger" href="#">Explore My Web Design Journey</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary animated-button" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary animated-button" href="#projects">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Typewriter Effect -->
+    <section class="hero-section" data-aos="fade-up">
+        <div>
+            <span class="letter name-container" id="name-container">Hi I'am </span>
+            <div class="name-container" id="name-container">
+                
+                <span class="space"></span>
+                <span class="letter">P</span>
+                <span class="letter">r</span>
+                <span class="letter">a</span>
+                <span class="letter">n</span>
+                <span class="letter">j</span>
+                <span class="letter">a</span>
+                <span class="letter">l </span>
+                <span class="space"></span>
+                <span class="letter">O</span>
+                <span class="letter">j</span>
+                <span class="letter">h</span>
+                <span class="letter">a</span>
+            </div>
+        
+            <script>
+                // JavaScript to loop the typing animation
+                const letters = document.querySelectorAll('.letter');
+                const nameContainer = document.getElementById('name-container');
+        
+                let currentLetterIndex = 0;
+        
+                function animateName() {
+                    // Hide all letters first
+                    letters.forEach(letter => {
+                        letter.style.opacity = 0;
+                        letter.style.transform = 'translateY(10px)';
+                    });
+        
+                    // Show the letters one by one with a delay
+                    letters.forEach((letter, index) => {
+                        letter.style.animation = `typeAnimation 0.5s forwards ${index * 0.1}s`;
+                    });
+        
+                    // Once the animation completes, loop it again
+                    setTimeout(() => {
+                        animateName(); // Call the function to animate the name again
+                    }, 2000); // Delay before starting again
+                }
+        
+                // Start the animation initially
+                animateName();
+            </script>
+            <div class="words-container" id="word-container">
+                <span class="word">Web Developer</span>
+                <span class="word">UI/UX Designer</span>
+                <span class="word">Problem Solver</span>
+                <span class="word">Tech Enthusiast</span>
+            </div>
+            <p class="mt-4 text-xl">A passionate developer crafting interactive and dynamic web experiences.</p>
+            <a href="#projects" class="btn btn-danger btn-lg mt-5 animated-button">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section with Typewriter Effect -->
+    <section id="about" class="about-section py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <!-- Profile Image -->
+                <div class="w-full md:w-1/3 mb-8 md:mb-0 text-center">
+                    <img src="my_image.jpg" alt="Pranjal Ojha" class="rounded-full w-60 h-60 mx-auto shadow-lg transition-transform transform hover:scale-105">
+                </div>
+    
+                <!-- About Content -->
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">About Me</h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Hello! My name is <strong class="text-blue-600">Pranjal Ojha</strong>. I am a passionate web and mobile developer with experience in crafting dynamic and user-friendly applications. I have a strong command of tools and technologies such as:
+                    </p>
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-center text-gray-800 text-lg">
+                            <svg class="w-6 h-6 text-blue-600 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h18M3 10h18M3 15h18M3 20h18"></path>
+                            </svg>
+                            <span><strong>Languages and Frameworks:</strong> PHP, JavaScript, HTML, CSS, Tailwind CSS, Flutter</span>
+                        </li>
+                        <li class="flex items-center text-gray-800 text-lg">
+                            <svg class="w-6 h-6 text-blue-600 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6M9 16h6M9 8h6"></path>
+                            </svg>
+                            <span><strong>Databases:</strong> MySQL, MongoDB</span>
+                        </li>
+                    </ul>
+                    <p class="text-lg text-gray-700">
+                        I am constantly seeking to learn and implement the latest technologies to create efficient and innovative solutions. Let’s work together to turn ideas into reality!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section" data-aos="fade-left">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-4xl font-bold">My Projects</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card project-card shadow" data-aos="zoom-in">
+                        <img src="project_1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h3 class="card-title"><strong>Tuition Management System</strong></h3>
+                            <p class="card-text">The Tuition Management System is a comprehensive web application designed to streamline and automate the operations of a tuition center.</p>
+                            <button class="btn btn-primary animated-button" data-bs-toggle="modal" data-bs-target="#projectModal" onclick="showProjectDetails('Project 1', 'Description of Project 1', 'More details for Project 1.', 'project_1.jpg')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Class Management System</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="project_1.jpg" alt="Project Image" class="img-fluid mb-4">
+                    <p class="text-gray-700 mb-4">
+                        The Tuition Management System is a comprehensive web application designed to streamline and automate the operations of a tuition center. This system efficiently manages various aspects of student and teacher data, including student marks, results, fee tracking, and attendance.
+                    </p>
+        
+                    <h6 class="text-2xl font-semibold text-gray-800 mb-4">Key Features:</h6>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                        <li><strong class="font-bold">Student Data Management:</strong> Manage student details, marks, and results.</li>
+                        <li><strong class="font-bold">Fee Management:</strong> Track fees, generate receipts, and manage installments.</li>
+                        <li><strong class="font-bold">Results Management:</strong> Store and display students' exam results securely.</li>
+                        <li><strong class="font-bold">Teacher Attendance & Salary Management:</strong> Track attendance, calculate salaries, and generate salary slips.</li>
+                        <li><strong class="font-bold">Salary Slip Generation:</strong> Print or share salary slips digitally for teachers.</li>
+                        <li><strong class="font-bold">Student Portal:</strong> A secure portal for students to view their data, marks, results, and fees.</li>
+                        <li><strong class="font-bold">Teacher Portal:</strong> A portal for teachers to access their attendance and salary information.</li>
+                    </ul>
+        
+                    <p class="text-gray-700 mt-4">
+                        This system enhances the efficiency of tuition center operations, simplifies administration tasks, and provides a seamless experience for both students and teachers. It's designed with a user-friendly interface to ensure ease of use.
+                    </p>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="#" class="bi bi-github"></a>
+            <a href="#" class="bi bi-linkedin"></a>
+            <a href="#" class="bi bi-twitter-x"></a>
+        </div>
+        <p>&copy; 2024 Pranjal Ojha. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function showProjectDetails(title, description, details, imageUrl) {
+            document.getElementById('projectTitle').innerText = title;
+            document.getElementById('projectDescription').innerText = description;
+            document.getElementById('projectDetails').innerText = details;
+            document.getElementById('projectModal').querySelector('img').src = imageUrl;
+        }
+    </script>
+    <script>
+        AOS.init();
+
+        // JavaScript to handle word animation
+        let currentWordIndex = 0;
+        const words = document.querySelectorAll('.word');
+        const totalWords = words.length;
+
+        // Function to show words with animation
+        function showWords() {
+            // Hide all words
+            words.forEach(word => word.style.display = 'none');
+            
+            // Show the current word with animation
+            words[currentWordIndex].style.display = 'inline-block';
+
+            // Increment index for the next word
+            currentWordIndex = (currentWordIndex + 1) % totalWords;
+        }
+
+        // Start the word animation with a delay and loop
+        setInterval(showWords, 3000); // Change every 3 seconds (adjust as needed)
+        showWords(); // Run once initially
+    </script>
+</body>
+</html>
